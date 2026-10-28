@@ -1,7 +1,21 @@
-This 29-byte Com file is Intended to Dix the Pedestal Bit Error on the S3 Trio3D (86C366) GPU
-You Run it In MS-DOS and You'll See the Screen Goe a Bit Dim, but Do not Worry, it isn't broken, that's what it is supposed to do.
-the program was built in MS-DOS 6.22 DEBUG.COM with the assistance of Google Gemini AI and Bits Und Bolts (BuB) And his work on the S3 Pedestal Bit Fixes
-This file DOES NOT Contain any harmful code, and will not damage your system, it is safe to use.
-it Was Tested on my Old IBM PC300GL Type 6275 on S3 Trio3D BIOS Version 2.0B.05c-C5.03.08, and works.
-Enjoy.
-- RetroFan90
+# S3Fix
+
+This 29-byte `.COM` utility is designed to fix the black level pedestal bit issue on the **S3 Trio3D (86C366)** graphics card. 
+
+When executed in MS-DOS, it clears bit 5 in Sequencer Register `1A` (`SR1A`), removing the washed-out 7.5 IRE pedestal and restoring true, deep black levels.
+
+### Usage
+Run `S3FIX.COM` directly from the MS-DOS prompt or add it to your `AUTOEXEC.BAT` file to automatically fix the display on boot. 
+
+*Note: You will notice the screen brightness drop slightly when executed—this is completely normal and means the elevated gray-black pedestal has been successfully disabled.*
+
+### Background & Testing
+* **Built with:** MS-DOS 6.22 `DEBUG.COM`
+* **Tested hardware:** IBM PC300GL (Type 6275) with S3 Trio3D GPU
+* **BIOS Version:** 2.0B.05c-C5.03.08
+
+### Acknowledgments
+Developed with assistance from Google Gemini AI and research from **Bits Und Bolts (BuB)** on S3 pedestal bit register fixes.
+
+---
+*RetroFan90*
